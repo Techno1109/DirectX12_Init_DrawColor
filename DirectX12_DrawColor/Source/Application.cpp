@@ -35,7 +35,7 @@ bool Application::Init()
 	_WndClass.hInstance = GetModuleHandle(nullptr);
 	_WndClass.cbSize=sizeof(WNDCLASSEX);
 	_WndClass.lpfnWndProc=(WNDPROC)WindowProcedure;
-	_WndClass.lpszClassName = "DirectX12_KeigoMasuda";
+	_WndClass.lpszClassName = "DirectX12_DrawColor";
 	RegisterClassEx(&_WndClass);
 
 	RECT Wrect = {0,0,Window_W,Window_H};
@@ -43,8 +43,7 @@ bool Application::Init()
 	_Hwnd = CreateWindow
 		(
 		_WndClass.lpszClassName,
-		//"DirectX12_KeigoMasuda",
-		"1816031_DirectX12_KeigoMasuda",
+		"DirectX12_DrawColor_TechNO",
 		WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT,
 		CW_USEDEFAULT,
